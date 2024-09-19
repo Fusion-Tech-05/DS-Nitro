@@ -18,6 +18,7 @@ Nice to have Features:
 6. Can work on the 3DS, 2DS, New 3DS, New 2DS and DSi
 7. Cheats system.
 8. GBA Wirless system.
+9. Real time save that works well.
 
 Potential Features, really extra features that I don't plan to implement until everything else is done or mostly done.
 1. Built in CPU and RAM a bit like the Supercard dstwo, hopefully a lot more powerful one that can emulate consoles such as the 3DS, New 3DS or PSP.
