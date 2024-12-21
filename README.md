@@ -24,3 +24,5 @@ Potential Features, really extra features that I don't plan to implement until e
 1. Built in CPU and RAM a bit like the Supercard dstwo, hopefully a lot more powerful one that can emulate consoles such as the 3DS, New 3DS or PSP.
 2. The built in RAM can be utilised by applications such as the DS Internet Browser and emulators that would usually use a slot 2 RAM pak.
 3. An internet card and internet browser that have far expanded capabilities to the original, supporting moddern protocols and modern browser features.
+
+Currently, I plan on doing this through using an FPGA and an ESP32. The ESP32 will be able to handle the inrared light and receiver, as well as the expanded internet capabilties. The FPGA will be in charge of controlling the sd card and the ds cartidge protocol, althogugh, the ESP32 is capable of handeling all these tasks by itself, so in the end the DS nitro might only be piwered by an ESP32.
