@@ -13,9 +13,9 @@ Nice to have Features:
 1. Supports sd cards up to sdxc.
 2. Works with ds download play.
 3. Has a built in IR for games that can untilise it.
-4. Works with the ds rumble pak and the ds ram pak.
+4. Works with the ds rumble pak and the ds ram pak and slot 2 flash carts.
 5. Can run emulators that emulate NES, SNES, GB, GBC, MS, MD, etc.
-6. Can work on the 3DS, 2DS, New 3DS, New 2DS and DSi
+6. Can work on the 3DS, 2DS, New 3DS, New 2DS, DSi, DSL, DS (so perfect hardware compatibility).
 7. Cheats system.
 8. GBA Wirless system.
 9. Real time save that works well.
@@ -25,4 +25,3 @@ Potential Features, really extra features that I don't plan to implement until e
 2. The built in RAM can be utilised by applications such as the DS Internet Browser and emulators that would usually use a slot 2 RAM pak.
 3. An internet card and internet browser that have far expanded capabilities to the original, supporting moddern protocols and modern browser features.
 
-Currently, I plan on doing this through using an FPGA and an ESP32. The ESP32 will be able to handle the infrared light and receiver, as well as the expanded internet capabilties. The FPGA will be in charge of controlling the sd card and the ds cartidge protocol, although, the ESP32 is capable of handeling all these tasks by itself, so in the end the DS nitro might only be powered by an ESP32. Using only an ESP32 only will also allow the csr of the flash cart to be brought down.
