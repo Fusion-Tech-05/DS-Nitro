@@ -3,9 +3,17 @@ My attempt at an open source DS flashcart.
 
 The goal for this project is to create a DS flash cart that is open source, IDK if this exists currently but I want it too.
 
+-----------------------------------------------------------------------------------------------------------------------------
+Current features I know I can add (I am still trying to learn the SDIO interface so this is just stuff I know I will be able to do eventually):
+ - SDSC/SDHC/SDXC support.
+ - Can save games to SD card.
+ - Can play games without anti-piracy measures built in (so only the anti-piracy measures that the DS has included will be able to be by-passed).
+ - Has an integrated IR sensor and receiver.
+-----------------------------------------------------------------------------------------------------------------------------
+
 Required Features:
 1. Works on the DS and DS lite.
-2. Supports sd cards up to sdhc.
+2. Supports SD cards up to SDHC.
 3. Can save game save files to the sd card directly.
 4. Can automatically patch games, the same as what most moddern ds flash carts can do.
 5. Works on the DS and DSL.
