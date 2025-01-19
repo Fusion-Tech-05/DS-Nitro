@@ -5,6 +5,7 @@ The goal for this project is to create a DS flash cart that is open source, IDK 
 
 -----------------------------------------------------------------------------------------------------------------------------
 Current features I know I can add (I am still trying to learn the SDIO interface so this is just stuff I know I will be able to do eventually):
+ - Works on the DS/DSL
  - SDSC/SDHC/SDXC support.
  - Can save games to SD card.
  - Can play games without anti-piracy measures built in (so only the anti-piracy measures that the DS has included will be able to be by-passed).
