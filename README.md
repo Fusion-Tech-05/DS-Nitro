@@ -23,6 +23,7 @@ Currently planned feautres.
 - Perfect homebrew compatibility.
 - Perfect console compatibility.
 - DSi ROM support, without using NTR boot.
+- GBA wireless system support.
 -----------------------------------------------------------------------------------------------------------------------------
 
 -- Everything below here hasn't been properly edited for the new goals of the project, I will do that later.
@@ -42,7 +43,7 @@ Nice to have Features:
 5. Can run emulators that emulate NES, SNES, GB, GBC, MS, MD, etc.
 6. Can work on the 3DS, 2DS, New 3DS, New 2DS, DSi, DS lite, DS floorlessly no matter the software version (so perfect hardware compatibility).
 7. Cheats system.
-8. GBA Wirless system.
+8. GBA wireless system.
 9. Real time save that works most the time without having the chance to break the ROM the RTS is tied too.
 10. Fast software to complement the fast hardware of the DS NITRO.
 11. Can use both Fat32 and ExFat -- not required if NAND storage is used.
