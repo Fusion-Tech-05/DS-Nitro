@@ -1,59 +1,43 @@
-# DS-Nitro
+# I need a new name for this flashcart.
 My attempt at an open source DS flashcart.
 
 The goal for this project is to create a DS flash cart that is open source, IDK if this exists currently but I want it too.
 
 -----------------------------------------------------------------------------------------------------------------------------
-Current features I know I can add (I am still trying to learn the SDIO interface so this is just stuff I know I will be able to do eventually):
+Required features.
  - Works on the DS/DS lite.
- - SDSC/SDHC/SDXC support -- The flashcart might not use SD cards so this is kinda uncertain if it's gonna be used or not at all.
- - Can save games to SD card/NAND.
+ - SDIO/SDHC/SDXC support (so SD cards from the smallest possible up to 2 Terrabytes).
+ - Can save games to SD card (the player chooses this on the first run of the game).
  - Can play games without anti-piracy measures built in (so only the anti-piracy measures that the DS has included, which are by-passed by the flashcart upon boot) can be run.
- - Has an integrated IR sensor and receiver.
+ - Has an integrated IR sensor/blaster.
+ - Fully legal.
 -----------------------------------------------------------------------------------------------------------------------------
-Currently planned feautres.
- - Okay, so micro SD cards as a format are not great, mainly they are weak and unreliable, so the current plan is to use a built in NAND storage inside the flashcart, a bit like how the ncard worked. MT29F512G08CFCBBWP-10ES:B TR will be the nand chip of choice, purley because this is the only NAND chip I could find that was in the easy to solder TSOP package and had at least 64 gigabytes of storage (it's around 64 gigabytes in size).
- - Uses ESP32 Wifi features such as being able to share files/ROMS between DS NITROs, connect to some sort of desktop/mobile app to easily send ROMS to the DS NITRO over wifi, maybe external controller support, and whatever else I or developers choose to do with it.
- - Has an integrated USB C port for transfering ROMS to the DS NITRO, upgrading the FIRMWARE or OS of the flashcart, letting DS NITROs communicate with eachother for FILE transfer, acting as GBA link cable for emulaltors that could use it that way, and what ever else I or developers choose to do with it.
-- Perfect game compatibility, both with included emulators and DS games.
-- Integrated IR sensor.
-- A custom OS maybe based off an existing solution, but unlikely due to the way the hardware is. This OS will handel control over all the software based features, such as wifi features and so on. This custom OS will be really fast, look amazing with lot's of 3D rendered graphics, and fully support the touch screen. It will also have the ability to let you change themes, including any and all icons being able to be changed in every theme, and so much more. The OS wil also be able to have powerful file manipulation tools, including but not limited too, changing names of files, deleting files, copying files, moving files, bulk moving files, creating folders, deleting folders, enable and disabling and editing features to ROMs (such as Real Time Save, Real Time Guid, Real Time Cheats, handeling multiple saves and how they work, and so on), and so much more.
-- If I can figure out how to get this too work, support for homebrew games and applications to be as large as they want, without any impact.
-- Perfect game compatibiltiy.
-- Perfect homebrew compatibility.
-- Perfect console compatibility.
-- DSi ROM support, without using NTR boot.
+Planned feautres.
+- A dual storage solution, with both Micro SD card support and NAND support, like the Acekard RPG, except the NAND is a higher capacity and it is not based off any Acekard hardware.
+- An integrated USB-C port, or maybe some other kind of port that is easier to fit within the form factor, for upgrading the firmware or flashing new information to the FPGA.
+- Perfect game compatibility.
+- Integrated IR sensor/blaster for games that can use it.
+- A custom kernel that can do the following: allow the integrated IR sensor to get full use, use a custom DLDI autopatcher that allows for homebrew that uses the IR sensor/blaster and more powerful file manipulation, so in theory you could fully organise your files without using a PC with ease including creating new folders and re-naming files, .
+- Perfect game, homebrew and console compatibility, in a perfectly legal way.
+- Supports booting DSi ROMs and DSi mode homebrew without a modded console.
 - GBA wireless system support.
+- Use the built in IR sensor for GBA games hthat require IR support but the cartridge it's being run off doesn't have it.
+- Hardware based real time save that works with all games flawlessly.
+- Can use both Fat12/Fat16/Fat32 (required) and ExFat (doesn't exist elsewhere, Fat32 is often only supported) Micro SD formats.
 -----------------------------------------------------------------------------------------------------------------------------
-
--- Everything below here hasn't been properly edited for the new goals of the project, I will do that later.
-
-Required Features:
-1. Works on the DS and DS lite.
-2. Supports SD cards up to SDHC or intergrated NAND storage.
-3. Can save game save files to the SD card or NAND directly.
-4. Can automatically patch games, the same as what most moddern ds flash carts can do with perfect game compatibility.
-5. Works on the DS and DSL.
-
-Nice to have Features:
-1. Supports sd cards up to sdxc or uses high capacity NAND storage.
-2. Works with ds download play.
-3. Has a built in IR for games that can untilise it.
-4. Works with the ds rumble pak and the ds ram pak and slot 2 flash carts.
-5. Can run emulators that emulate NES, SNES, GB, GBC, MS, MD, etc.
-6. Can work on the 3DS, 2DS, New 3DS, New 2DS, DSi, DS lite, DS floorlessly no matter the software version (so perfect hardware compatibility).
-7. Cheats system.
-8. GBA wireless system.
-9. Real time save that works most the time without having the chance to break the ROM the RTS is tied too.
-10. Fast software to complement the fast hardware of the DS NITRO.
-11. Can use both Fat32 and ExFat -- not required if NAND storage is used.
-12. The flashcart is cheap.
-
-Potential Features, really extra features that I don't plan to implement until everything else is done or mostly done.
-1. Built in CPU and RAM a bit like the Supercard dstwo, hopefully a lot more powerful one that can emulate consoles such as the 3DS, New 3DS or PSP, although the more likely target is perfect PS1 emulation (not accuracy but performance, this is due to cost reasons (with the goal of keeping this flashcart as cheap as possible and all) and how difficult it would be to implement a CPU powerful enough to emulate the 3DS, New 3DS or PSP).
-2. The built in RAM can be utilised by applications such as the DS Internet Browser and emulators that would usually use a slot 2 RAM pak (these applications would have to be custom built for the DS nitro, of course).
-3. An internet card and internet browser that have far expanded capabilities to the original, supporting moddern protocols and modern browser features (this might be done via a slot 2 expansion card that pairs with the DS NITRO!).
-
+Nice to have features (these features will be included on a later, seperate flashcart likely).
+- Built in CPU and RAM like the Supercard DSTWO, except likely more powerful.
+- The RAM within the flashcart can be used with games instead of the RAM built into external GBA cartridges.
+- A built in WiFi card, this might be built into a seperate GBA flashcart.
+- 3DS game support, even though custom firmware will be better, this will be more or less a 'why not?' feature.
+-----------------------------------------------------------------------------------------------------------------------------
+Current Parts List:
+- Maybe this 64GB NAND chip, purley because of it's size, and that it's in the TSOP form factor, very easy to solder with: MT29F512G08CFCBBWP-10ES:B TR
+- FPGA - Latice IceBreaker ICE40UP5K-SG48ITR
+- Micro SD Slot - microSD_HC_Hirose_DM3D-SF
+- Some SOIC-8 form factor SPI NAND that can run off 3.3v
+- Resistor of some value, I don't know what yet.
+-----------------------------------------------------------------------------------------------------------------------------
 
 
 
